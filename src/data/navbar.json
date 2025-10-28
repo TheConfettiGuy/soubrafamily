@@ -1,0 +1,162 @@
+{
+  "topBar": {
+    "links": [
+      {
+        "id": "registration",
+        "label": "علم وخبر",
+        "href": "/registration"
+      },
+      {
+        "id": "donate",
+        "label": "تبرع",
+        "href": "/donate"
+      },
+      {
+        "id": "contact",
+        "label": "اتصل بنا",
+        "href": "/contact"
+      }
+    ],
+    "socialMedia": [
+      {
+        "id": "facebook",
+        "label": "فيسبوك",
+        "href": "https://facebook.com",
+        "icon": "facebook"
+      },
+      {
+        "id": "twitter",
+        "label": "تويتر",
+        "href": "https://twitter.com",
+        "icon": "twitter"
+      },
+      {
+        "id": "instagram",
+        "label": "انستغرام",
+        "href": "https://instagram.com",
+        "icon": "instagram"
+      },
+      {
+        "id": "linkedin",
+        "label": "لينكد إن",
+        "href": "https://linkedin.com",
+        "icon": "linkedin"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "home",
+      "label": "الصفحة الرئيسية",
+      "href": "/",
+      "icon": "home"
+    },
+    {
+      "id": "family",
+      "label": "عائلة آل سوبره",
+      "icon": "briefcase",
+      "dropdown": [
+        {
+          "id": "origin",
+          "label": "اصل آل سوبره",
+          "href": "/family/origin",
+          "icon": "layout"
+        },
+        {
+          "id": "familyTree",
+          "label": "شجرة العائلة",
+          "href": "/family/family-tree",
+          "icon": "smartphone"
+        }
+      ]
+    },
+    {
+      "id": "association",
+      "label": "جمعية آل سوبره",
+      "icon": "package",
+      "dropdown": [
+        {
+          "id": "internal",
+          "label": "النظام الداخلي",
+          "href": "/association/internal-rules",
+          "icon": "code"
+        },
+        {
+          "id": "main",
+          "label": "النظام الاساسي",
+          "href": "/association/rules",
+          "icon": "cpu"
+        },
+        {
+          "id": "administration",
+          "label": "الهيئة الادارية",
+          "href": "/association/administration",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "familyguid",
+          "label": "دليل العائلة",
+          "href": "/association/family-guide",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "suggestions",
+          "label": "اقتراحات",
+          "href": "/association/suggestions",
+          "icon": "shopping-bag"
+        }
+      ]
+    },
+    {
+      "id": "join",
+      "label": "انتسب الى الجمعية",
+      "href": "/join",
+      "icon": "package"
+    },
+    {
+      "id": "activities",
+      "label": "نشاطات ومناسبات",
+      "icon": "package",
+      "dropdown": [
+        {
+          "id": "academictrips",
+          "label": "رحلات ثقافية",
+          "href": "/activities/academic-trips",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "academicActivity",
+          "label": "نشاطات ومساعدات تربوية",
+          "href": "/activities/academic-activities",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "commencements",
+          "label": "حفلات تخرج",
+          "href": "/activities/grad-commencements",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "iftar",
+          "label": "لقاء الافطار السنوي",
+          "href": "/activities/annual-iftar",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "socialActivity",
+          "label": "نشاطات اجتماعية",
+          "href": "/activities/social-activities",
+          "icon": "shopping-bag"
+        },
+        {
+          "id": "meetups",
+          "label": "لقاء عيد الاضحى",
+          "href": "/activities/adha",
+          "icon": "shopping-bag"
+        }
+      ]
+    }
+  ]
+  
+
+}

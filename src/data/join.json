@@ -1,0 +1,185 @@
+{
+  "title": "الانتساب إلى الجمعية",
+  "subtitle": "نرحب بانضمامكم إلى جمعية عائلة سوبره",
+  "requirements": {
+    "title": "شروط الانتساب",
+    "description": "يشترط في من يرغب الانتساب إلى الجمعية أن يكون:",
+    "items": [
+      {
+        "number": 1,
+        "text": "قد أتم العشرين من العمر وأن يكون من آل سوبره"
+      },
+      {
+        "number": 2,
+        "text": "متمتعاً بحقوقه المدنية وغير محكوم عليه بجناية أو جنحة شائنة"
+      },
+      {
+        "number": 3,
+        "text": "قابلاً بنظام الجمعية وملتزماته"
+      }
+    ]
+  },
+  "process": {
+    "title": "طريقة الانتساب",
+    "description": "يتقدم من تتوفر فيه شروط العضوية بطلب خطي يصرح فيه عن رغبته بالإنضمام إلى الجمعية ويرفقه بالسجل العدلي وصورة عن هويته وإخراج قيده. عندها يصبح حكماً عضواً في الهيئة العامة. وبدفعه بدل الإشتراك يحق له المشاركة في الترشح والإنتخاب.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "تقديم الطلب",
+        "description": "تقدم بطلب خطي يصرح فيه عن رغبتك بالإنضمام إلى الجمعية"
+      },
+      {
+        "number": 2,
+        "title": "إرفاق المستندات",
+        "description": "أرفق السجل العدلي وصورة عن الهوية وإخراج القيد"
+      },
+      {
+        "number": 3,
+        "title": "العضوية",
+        "description": "تصبح حكماً عضواً في الهيئة العامة"
+      },
+      {
+        "number": 4,
+        "title": "دفع الاشتراك",
+        "description": "بدفع بدل الإشتراك يحق لك المشاركة في الترشح والإنتخاب"
+      }
+    ]
+  },
+  "form": {
+    "title": "طلب الانتساب",
+    "annualFee": "25.000L.L.",
+    "fields": [
+      {
+        "id": "name",
+        "label": "الاسم:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "fatherGrandfather",
+        "label": "اسم الأب/الجد:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "motherName",
+        "label": "اسم الأم:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "registryNumber",
+        "label": "رقم السجل:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "birthDate",
+        "label": "تاريخ الولادة (اليوم/الشهر/السنة)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "birthPlace",
+        "label": "مكان الولادة:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "profession",
+        "label": "المهنة:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "workAddress",
+        "label": "عنوان العمل:",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "id": "homeAddress",
+        "label": "عنوان السكن:",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "id": "fax",
+        "label": "فاكس:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "workPhone",
+        "label": "هاتف العمل:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "homePhone",
+        "label": "هاتف المنزل:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "childrenNames",
+        "label": "أسماء الأولاد:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "maritalStatus",
+        "label": "الوضع العائلي:",
+        "type": "radio",
+        "required": true,
+        "options": [
+          { "value": "single", "label": "أعزب" },
+          { "value": "married", "label": "متأهل" },
+          { "value": "divorced", "label": "مطلق" }
+        ]
+      },
+      {
+        "id": "academicLevel",
+        "label": "المستوى الأكاديمي:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "experience",
+        "label": "الخبرات:",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "id": "spouseProfession",
+        "label": "مهنة الزوج/الزوجة:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "spouseName",
+        "label": "اسم الزوج/الزوجة:",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "gender",
+        "label": "ذكر/أنثى:",
+        "type": "radio",
+        "required": true,
+        "options": [
+          { "value": "male", "label": "ذكر" },
+          { "value": "female", "label": "أنثى" }
+        ]
+      },
+      {
+        "id": "contribution",
+        "label": "مساهمة:",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "submitButton": "ارسال",
+    "resetButton": "مسح البيانات"
+  }
+}

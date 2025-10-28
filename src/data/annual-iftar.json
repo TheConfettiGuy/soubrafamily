@@ -1,0 +1,60 @@
+{
+  "title": "الإفطار السنوي",
+  "description": "تقيم جمعية عائلة سوبره إفطاراً سنوياً رمضانياً يجمع أفراد العائلة في أجواء روحانية ومحبة",
+  "events": [
+    {
+      "id": 1,
+      "year": "2024",
+      "date": "15 رمضان 1445 هـ - 25 مارس 2024",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+      "attendees": "150",
+      "album": "/annual-iftar/2024"
+    },
+    {
+      "id": 2,
+      "year": "2023",
+      "date": "18 رمضان 1444 هـ - 9 أبريل 2023",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+      "attendees": "140",
+      "album": "/annual-iftar/2023"
+    },
+    {
+      "id": 3,
+      "year": "2022",
+      "date": "20 رمضان 1443 هـ - 21 أبريل 2022",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80",
+      "attendees": "135",
+      "album": "/images/albums/annual-iftar/2022"
+    },
+    {
+      "id": 4,
+      "year": "2021",
+      "date": "22 رمضان 1442 هـ - 4 مايو 2021",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+      "attendees": "120",
+      "album": "/images/albums/annual-iftar/2021"
+    },
+    {
+      "id": 5,
+      "year": "2020",
+      "date": "25 رمضان 1441 هـ - 18 مايو 2020",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800&q=80",
+      "attendees": "110",
+      "album": "/images/albums/annual-iftar/2020"
+    },
+    {
+      "id": 6,
+      "year": "2019",
+      "date": "27 رمضان 1440 هـ - 1 يونيو 2019",
+      "location": "قاعة الجمعية - بيروت",
+      "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&q=80",
+      "attendees": "145",
+      "album": "/images/albums/annual-iftar/2019"
+    }
+  ]
+}

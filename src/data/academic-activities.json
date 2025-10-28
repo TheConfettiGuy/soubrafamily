@@ -1,0 +1,130 @@
+{
+  "title": "النشاطات الأكاديمية",
+  "description": "تقوم الجمعية بتقديم مساعدات مدرسية للطلاب المتفوقين من أبناء العائلة غير المقتدرين لتسديد الأقساط السنوية.",
+  "requiredDocuments": {
+    "title": "المستندات المطلوبة لتقديم طلب مساعدة مدرسية",
+    "documents": [
+      "صورة شخصية عدد (2)",
+      "إخراج قيد إفرادي",
+      "إخراج قيد عائلي",
+      "دفتر علامات العام المنصرم",
+      "إفادة مدرسية بقيمة القسط والكتب والتنقلات والمستلزمات الأخرى",
+      "إفادة قبول الطالب في المدرسة",
+      "إفادات الرواتب الشهرية لولي أمر الطالب من رب العمل"
+    ]
+  },
+  "additionalInfo": "كما تقوم الجمعية بدورة تدريب مجانية على الحاسوب لأبناء العائلة وذلك بالتعاون مع معهد متخصص.",
+  "formTitle": "طلب المساعدة المدرسية",
+  "formSubtitle": "بيانات الطالب",
+  "fields": [
+    {
+      "id": "name",
+      "label": "الاسم:",
+      "type": "text",
+      "required": true,
+      "icon": "user"
+    },
+    {
+      "id": "fatherName",
+      "label": "اسم الأب:",
+      "type": "text",
+      "required": true,
+      "icon": "user"
+    },
+    {
+      "id": "motherName",
+      "label": "اسم الأم:",
+      "type": "text",
+      "required": true,
+      "icon": "user"
+    },
+    {
+      "id": "birthDate",
+      "label": "تاريخ الولادة (اليوم/الشهر/السنة):",
+      "type": "text",
+      "required": true,
+      "icon": "calendar",
+      "placeholder": "DD/MM/YYYY"
+    },
+    {
+      "id": "birthPlace",
+      "label": "مكان الولادة:",
+      "type": "text",
+      "required": true,
+      "icon": "map-pin"
+    },
+    {
+      "id": "fatherProfession",
+      "label": "مهنة الأب:",
+      "type": "text",
+      "required": true,
+      "icon": "briefcase"
+    },
+    {
+      "id": "fatherBirthDate",
+      "label": "تاريخ الولادة الأب (اليوم/الشهر/السنة):",
+      "type": "text",
+      "required": true,
+      "icon": "calendar",
+      "placeholder": "DD/MM/YYYY"
+    },
+    {
+      "id": "fatherWorkAddress",
+      "label": "عنوان عمل الأب:",
+      "type": "textarea",
+      "required": true,
+      "icon": "map-pin"
+    },
+    {
+      "id": "homeAddress",
+      "label": "عنوان السكن:",
+      "type": "textarea",
+      "required": true,
+      "icon": "home"
+    },
+    {
+      "id": "fatherWorkPhone",
+      "label": "هاتف العمل الأب:",
+      "type": "tel",
+      "required": true,
+      "icon": "phone"
+    },
+    {
+      "id": "homePhone",
+      "label": "هاتف المنزل:",
+      "type": "tel",
+      "required": true,
+      "icon": "phone"
+    },
+    {
+      "id": "schoolName",
+      "label": "اسم المدرسة:",
+      "type": "text",
+      "required": true,
+      "icon": "book"
+    },
+    {
+      "id": "fromYear",
+      "label": "من عامر:",
+      "type": "text",
+      "required": true,
+      "icon": "calendar"
+    },
+    {
+      "id": "toYear",
+      "label": "إلى عامر:",
+      "type": "text",
+      "required": true,
+      "icon": "calendar"
+    },
+    {
+      "id": "certificates",
+      "label": "الشهادات:",
+      "type": "text",
+      "required": false,
+      "icon": "award"
+    }
+  ],
+  "submitButton": "إرسال الطلب",
+  "resetButton": "إعادة تعيين"
+}

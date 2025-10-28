@@ -1,0 +1,46 @@
+{
+  "title": "دليل العائلة",
+  "description": "يمكنكم الإطلاع على مختلف الوثائق والقوائم الخاصة بعائلة سوبره من خلال تحميل الملفات التالية",
+  "documents": [
+    {
+      "id": "family-guide",
+      "title": "دليل العائلة",
+      "description": "للإطلاع على دليل العائلة يرجى تحميل الملف التالي:",
+      "fileName": "دليل العائلة.pdf",
+      "fileUrl": "/downloads/family-guide.pdf",
+      "icon": "book"
+    },
+    {
+      "id": "doctors-list",
+      "title": "لائحة الأطباء",
+      "description": "للإطلاع على لائحة الأطباء يرجى تحميل الملف التالي:",
+      "fileName": "لائحة الأطباء.pdf",
+      "fileUrl": "/downloads/doctors-list.pdf",
+      "icon": "medical"
+    },
+    {
+      "id": "pharmacists-list",
+      "title": "لائحة الصيادلة",
+      "description": "للإطلاع على لائحة الصيادلة يرجى تحميل الملف التالي:",
+      "fileName": "لائحة الصيادلة.pdf",
+      "fileUrl": "/downloads/pharmacists-list.pdf",
+      "icon": "pharmacy"
+    },
+    {
+      "id": "cultural-committee",
+      "title": "أعضاء اللجنة الثقافية",
+      "description": "للإطلاع على لائحة أعضاء اللجنة الثقافية يرجى تحميل الملف التالي:",
+      "fileName": "أعضاء اللجنة الثقافية.pdf",
+      "fileUrl": "/downloads/cultural-committee.pdf",
+      "icon": "users"
+    },
+    {
+      "id": "expatriates-list",
+      "title": "لائحة المغتربين",
+      "description": "للإطلاع على لائحة المغتربين يرجى تحميل الملف التالي:",
+      "fileName": "لائحة المغتربين.pdf",
+      "fileUrl": "/downloads/expatriates-list.pdf",
+      "icon": "globe"
+    }
+  ]
+}
