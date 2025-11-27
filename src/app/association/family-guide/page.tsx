@@ -1,4 +1,4 @@
-import Footer from "@/app/components/footer/page";
+import Footer from "@/app/components/footer";
 import familyGuideData from "@/data/family-guide.json";
 import { FileText, Globe, Pill, Stethoscope, Users } from "lucide-react";
 
@@ -23,61 +23,60 @@ const Page = () => {
           </p>
         </div>
       </div>
+
       <div className="container mx-auto px-4 py-8">
-        {/* Documents Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {familyGuideData.documents.map((doc) => {
-            const Icon = iconMap[doc.icon as keyof typeof iconMap];
+          {familyGuideData.documents
+            .filter((doc) => doc.visible !== false)
+            .map((doc) => {
+              const Icon =
+                iconMap[doc.icon as keyof typeof iconMap] ?? FileText;
 
-            return (
-              <div
-                key={doc.id}
-                className="bg-gray-100 border-r-4 border-main-100 transition-all duration-300 overflow-hidden group"
-              >
-                <div className="p-6">
-                  {/* Icon and Title */}
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-main-100 flex items-center justify-center transition-colors duration-300">
-                      <Icon className="w-7 h-7 text-white" />
+              return (
+                <div
+                  key={doc.id}
+                  className="bg-gray-100 border-r-4 border-main-100 transition-all duration-300 overflow-hidden"
+                >
+                  <div className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-14 h-14 bg-main-100 flex items-center justify-center">
+                        <Icon className="w-7 h-7 text-white" />
+                      </div>
+                      <h2 className="text-2xl font-bold text-main-100 text-right flex-1">
+                        {doc.title}
+                      </h2>
                     </div>
-                    <h2 className="text-2xl font-bold text-main-100 text-right flex-1">
-                      {doc.title}
-                    </h2>
-                  </div>
 
-                  {/* Description */}
-                  <p className="text-gray-600 text-right mb-6 leading-relaxed">
-                    {doc.description}
-                  </p>
+                    <p className="text-gray-600 text-right mb-6 leading-relaxed">
+                      {doc.description}
+                    </p>
 
-                  {/* Download Button */}
-                  <a
-                    href={doc.fileUrl}
-                    download
-                    className="flex items-center justify-center gap-2 w-full bg-main-100 hover:bg-white text-white hover:text-main-100 border hover:border-main-100 font-semibold py-3 px-6 transition-colors duration-300"
-                  >
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                    <a
+                      href={doc.fileUrl}
+                      download
+                      className="flex items-center justify-center gap-2 w-full bg-main-100 hover:bg-white text-white hover:text-main-100 border hover:border-main-100 font-semibold py-3 px-6 transition-colors duration-300"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                      />
-                    </svg>
-                    <span>تحميل {doc.fileName}</span>
-                  </a>
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                      <span>تحميل {doc.fileName}</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
 
-        {/* Footer Note */}
         <div className="mt-12 text-center">
           <div className="inline-block bg-gray-100 border-r-4 border-main-100 px-6 py-4">
             <p className="text-black text-right">

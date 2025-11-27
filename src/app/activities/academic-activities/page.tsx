@@ -1,26 +1,5 @@
-import Footer from "@/app/components/footer/page";
+import Footer from "@/app/components/footer";
 import academicData from "@/data/academic-activities.json";
-import {
-  Award,
-  Book,
-  Briefcase,
-  Calendar,
-  Home,
-  MapPin,
-  Phone,
-  User,
-} from "lucide-react";
-
-const iconMap = {
-  user: User,
-  calendar: Calendar,
-  "map-pin": MapPin,
-  briefcase: Briefcase,
-  phone: Phone,
-  home: Home,
-  book: Book,
-  award: Award,
-};
 
 const academicActivities = () => {
   return (
@@ -68,8 +47,6 @@ const academicActivities = () => {
 
           <form className="space-y-6">
             {academicData.fields.map((field) => {
-              const Icon = iconMap[field.icon as keyof typeof iconMap];
-
               return (
                 <div key={field.id} className="space-y-2">
                   <label

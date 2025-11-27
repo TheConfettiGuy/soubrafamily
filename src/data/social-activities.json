@@ -1,0 +1,97 @@
+{
+  "title": "النشاطات الاجتماعية والمعنوية",
+  "subtitle": "في أداء رسالتها والنشاط المعنوية:",
+  "description": "كما تقوم جمعية آل سوبره بتقديم الاستشارة والتوجيه لكل من يتقدم للحصول على أي نوع من أنواع المساعدات (تربوية ؟ طبية ؟ مادية ؟ معنوية .....) بعد ملء الطلب من صاحب العلاقة وعرضه على ذوي الاختصاص من آل سوبره",
+  "formTitle": "طلب إستشارة وتوجيه",
+  "fields": [
+    {
+      "id": "name",
+      "label": "الاسم:",
+      "type": "text",
+      "icon": "user",
+      "required": true
+    },
+    {
+      "id": "fatherName",
+      "label": "اسم الأب:",
+      "type": "text",
+      "icon": "user",
+      "required": true
+    },
+    {
+      "id": "motherName",
+      "label": "اسم الأم:",
+      "type": "text",
+      "icon": "user",
+      "required": true
+    },
+    {
+      "id": "registryNumber",
+      "label": "رقم السجل:",
+      "type": "text",
+      "icon": "hash",
+      "required": true
+    },
+    {
+      "id": "birthDate",
+      "label": "تاريخ الولادة (اليوم/الشهر/السنة):",
+      "type": "text",
+      "icon": "calendar",
+      "placeholder": "DD/MM/YYYY",
+      "required": true
+    },
+    {
+      "id": "birthPlace",
+      "label": "مكان الولادة:",
+      "type": "text",
+      "icon": "map-pin",
+      "required": true
+    },
+    {
+      "id": "spouseName",
+      "label": "اسم الزوج/الزوجة:",
+      "type": "text",
+      "icon": "heart",
+      "required": false
+    },
+    {
+      "id": "homeAddress",
+      "label": "عنوان السكن:",
+      "type": "textarea",
+      "icon": "home",
+      "required": true
+    },
+    {
+      "id": "homePhone",
+      "label": "هاتف المنزل:",
+      "type": "tel",
+      "icon": "phone",
+      "required": true
+    },
+    {
+      "id": "maritalStatus",
+      "label": "الوضع العائلي:",
+      "type": "radio",
+      "icon": "users",
+      "options": [
+        { "value": "single", "label": "أعزب" },
+        { "value": "married", "label": "متأهل" },
+        { "value": "divorced", "label": "مطلق" }
+      ],
+      "required": true
+    },
+    {
+      "id": "explanation",
+      "label": "يرجى شرح الموضوع بخمسة أسطر:",
+      "type": "textarea",
+      "icon": "file-text",
+      "rows": 5,
+      "required": true
+    }
+  ],
+  "contactInfo": {
+    "text": "كما يمكنكم التوجه إلى مركز الجمعية المؤقت على العنوان التالي:",
+    "address": "شارع كليمنصو، بناية مكسي، الطابق الأول",
+    "phone": "01-370660"
+  }
+}

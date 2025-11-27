@@ -1,7 +1,7 @@
 "use client";
 
 import joinData from "@/data/join.json";
-import Footer from "../components/footer/page";
+import Footer from "../components/footer";
 
 const Join = () => {
   return (
@@ -339,7 +339,7 @@ const Join = () => {
                   <label className="block text-right text-gray-700 font-semibold mb-3">
                     {joinData.form.fields[13].label}
                   </label>
-                  <div className="flex gap-6 justify-end">
+                  <div className="flex gap-6">
                     {joinData.form.fields[13].options?.map((option) => (
                       <label
                         key={option.value}
@@ -351,7 +351,7 @@ const Join = () => {
                           name="maritalStatus"
                           value={option.value}
                           required
-                          className="w-5 h-5 text-main-100 border-gray-300 focus:ring-main-100 cursor-pointer"
+                          className="w-4 h-4 text-main-100 focus:ring-main-100 cursor-pointer"
                         />
                       </label>
                     ))}
@@ -440,7 +440,7 @@ const Join = () => {
                   <label className="block text-right text-gray-700 font-semibold mb-3">
                     {joinData.form.fields[18].label}
                   </label>
-                  <div className="flex gap-6 justify-end">
+                  <div className="flex gap-6">
                     {joinData.form.fields[18].options?.map((option) => (
                       <label
                         key={option.value}
@@ -452,7 +452,7 @@ const Join = () => {
                           name="gender"
                           value={option.value}
                           required
-                          className="w-5 h-5 text-main-100 border-gray-300 focus:ring-main-100 cursor-pointer"
+                          className="w-4 h-4 text-main-100 focus:ring-main-100 cursor-pointer"
                         />
                       </label>
                     ))}

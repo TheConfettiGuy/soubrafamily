@@ -1,0 +1,30 @@
+{
+  "title": "صفحة ديناميكية تجريبية",
+  "blocks": [
+    {
+      "id": "hero-mi62z7rc-fg8e",
+      "type": "hero",
+      "visible": true,
+      "title": "عنوان كبير",
+      "subtitle": ""
+    },
+    {
+      "id": "section-mi635qxa-50ed",
+      "type": "section",
+      "visible": true,
+      "title": "قسم جديد",
+      "paragraphs": [
+        "ss"
+      ]
+    },
+    {
+      "id": "text-mi6361e2-6dda",
+      "type": "text",
+      "visible": true,
+      "text": "dd"
+    }
+  ],
+  "subtitle": "test",
+  "showSubtitle": true,
+  "showHeader": true
+}

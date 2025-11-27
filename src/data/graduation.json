@@ -1,0 +1,268 @@
+{
+  "years": [
+    {
+      "year": "2025",
+      "visible": false,
+      "lists": [
+        {
+          "key": "cat1",
+          "title": "فئة 1",
+          "names": [
+            "",
+            "",
+            ""
+          ],
+          "visible": true
+        },
+        {
+          "key": "cat2",
+          "title": "فئة 2",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat3",
+          "title": "فئة 3",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat4",
+          "title": "فئة 4",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat5",
+          "title": "فئة 5",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat6",
+          "title": "فئة 6",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat7",
+          "title": "فئة 7",
+          "names": [],
+          "visible": true
+        },
+        {
+          "key": "cat8",
+          "title": "فئة 8",
+          "names": [],
+          "visible": true
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "lists": [
+        {
+          "key": "cat1",
+          "title": "المتفوقون",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat2",
+          "title": "الأنشطة الطلابية",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat3",
+          "title": "الخريجون المكرّمون",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat4",
+          "title": "لجنة التنظيم",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat5",
+          "title": "التكريم الخاص",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat6",
+          "title": "الشكر والتقدير",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat7",
+          "title": "الضيوف",
+          "names": [],
+          "visible": false
+        },
+        {
+          "key": "cat8",
+          "title": "أوائل الأقسام",
+          "names": [],
+          "visible": false
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "lists": [
+        {
+          "key": "cat1",
+          "title": "المتفوقون",
+          "names": []
+        },
+        {
+          "key": "cat2",
+          "title": "الأنشطة الطلابية",
+          "names": []
+        },
+        {
+          "key": "cat3",
+          "title": "الخريجون المكرّمون",
+          "names": [
+            "جهاد سرور",
+            "رهف علاء"
+          ]
+        },
+        {
+          "key": "cat4",
+          "title": "لجنة التنظيم",
+          "names": []
+        },
+        {
+          "key": "cat5",
+          "title": "التكريم الخاص",
+          "names": []
+        },
+        {
+          "key": "cat6",
+          "title": "الشكر والتقدير",
+          "names": []
+        },
+        {
+          "key": "cat7",
+          "title": "الضيوف",
+          "names": []
+        },
+        {
+          "key": "cat8",
+          "title": "أوائل الأقسام",
+          "names": []
+        }
+      ]
+    },
+    {
+      "year": "2026",
+      "lists": [
+        {
+          "key": "cat1",
+          "title": "المتفوقون",
+          "names": []
+        },
+        {
+          "key": "cat2",
+          "title": "الأنشطة الطلابية",
+          "names": [
+            "sss",
+            "ssss",
+            "sss"
+          ]
+        },
+        {
+          "key": "cat3",
+          "title": "الخريجون المكرّمون",
+          "names": [
+            "sss",
+            "sss"
+          ]
+        },
+        {
+          "key": "cat4",
+          "title": "لجنة التنظيم",
+          "names": []
+        },
+        {
+          "key": "cat5",
+          "title": "التكريم الخاص",
+          "names": []
+        },
+        {
+          "key": "cat6",
+          "title": "الشكر والتقدير",
+          "names": []
+        },
+        {
+          "key": "cat7",
+          "title": "الضيوف",
+          "names": []
+        },
+        {
+          "key": "cat8",
+          "title": "أوائل الأقسام",
+          "names": []
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "lists": [
+        {
+          "key": "cat1",
+          "title": "المتفوقون",
+          "names": [
+            "أحمد السعيد"
+          ]
+        },
+        {
+          "key": "cat2",
+          "title": "الأنشطة الطلابية",
+          "names": []
+        },
+        {
+          "key": "cat3",
+          "title": "الخريجون المكرّمون",
+          "names": []
+        },
+        {
+          "key": "cat4",
+          "title": "لجنة التنظيم",
+          "names": [
+            "ندى خليل s"
+          ]
+        },
+        {
+          "key": "cat5",
+          "title": "التكريم الخاص",
+          "names": [
+            "test"
+          ]
+        },
+        {
+          "key": "cat6",
+          "title": "الشكر والتقدير",
+          "names": [
+            "فريق المتطوعين"
+          ]
+        },
+        {
+          "key": "cat7",
+          "title": "الضيوف",
+          "names": []
+        },
+        {
+          "key": "cat8",
+          "title": "أوائل الأقسام",
+          "names": []
+        }
+      ]
+    }
+  ]
+}

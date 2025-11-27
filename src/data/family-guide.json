@@ -1,46 +1,51 @@
 {
   "title": "دليل العائلة",
-  "description": "يمكنكم الإطلاع على مختلف الوثائق والقوائم الخاصة بعائلة سوبره من خلال تحميل الملفات التالية",
+  "description": "مجموعة من الملفات التعريفية والخدمية الخاصة بعائلة سوبره. يرجى تحميل الملفات بصيغة PDF من الروابط التالية.",
   "documents": [
+    {
+      "id": "doctors",
+      "title": "لائحة الأطباء",
+      "description": "للإطلاع على لائحة الأطباء يرجى تحميل الملف التالي:",
+      "fileUrl": "/files/doctors-list.pdf",
+      "fileName": "لائحة الأطباء.pdf",
+      "icon": "medical",
+      "visible": true
+    },
     {
       "id": "family-guide",
       "title": "دليل العائلة",
       "description": "للإطلاع على دليل العائلة يرجى تحميل الملف التالي:",
+      "fileUrl": "/files/family-guide.pdf",
       "fileName": "دليل العائلة.pdf",
-      "fileUrl": "/downloads/family-guide.pdf",
-      "icon": "book"
-    },
-    {
-      "id": "doctors-list",
-      "title": "لائحة الأطباء",
-      "description": "للإطلاع على لائحة الأطباء يرجى تحميل الملف التالي:",
-      "fileName": "لائحة الأطباء.pdf",
-      "fileUrl": "/downloads/doctors-list.pdf",
-      "icon": "medical"
-    },
-    {
-      "id": "pharmacists-list",
-      "title": "لائحة الصيادلة",
-      "description": "للإطلاع على لائحة الصيادلة يرجى تحميل الملف التالي:",
-      "fileName": "لائحة الصيادلة.pdf",
-      "fileUrl": "/downloads/pharmacists-list.pdf",
-      "icon": "pharmacy"
+      "icon": "book",
+      "visible": true
     },
     {
       "id": "cultural-committee",
       "title": "أعضاء اللجنة الثقافية",
       "description": "للإطلاع على لائحة أعضاء اللجنة الثقافية يرجى تحميل الملف التالي:",
+      "fileUrl": "/files/cultural-committee.pdf",
       "fileName": "أعضاء اللجنة الثقافية.pdf",
-      "fileUrl": "/downloads/cultural-committee.pdf",
-      "icon": "users"
+      "icon": "users",
+      "visible": true
     },
     {
-      "id": "expatriates-list",
+      "id": "pharmacies",
+      "title": "لائحة الصيدلة",
+      "description": "للإطلاع على لائحة الصيدلة يرجى تحميل الملف التالي:",
+      "fileUrl": "/files/pharmacies-list.pdf",
+      "fileName": "لائحة الصيدلة.pdf",
+      "icon": "pharmacy",
+      "visible": true
+    },
+    {
+      "id": "expats",
       "title": "لائحة المغتربين",
       "description": "للإطلاع على لائحة المغتربين يرجى تحميل الملف التالي:",
+      "fileUrl": "/files/expats-list.pdf",
       "fileName": "لائحة المغتربين.pdf",
-      "fileUrl": "/downloads/expatriates-list.pdf",
-      "icon": "globe"
+      "icon": "globe",
+      "visible": true
     }
   ]
 }

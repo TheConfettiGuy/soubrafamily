@@ -1,0 +1,24 @@
+{
+  "title": "الرحلات والأنشطة الأكاديمية",
+  "subtitle": "مجموعة من الرحلات والأنشطة التي قامت بها جمعية آل سوبره",
+  "categories": [
+    {
+      "id": "trip-3",
+      "folder": "academic-trips/trips-3",
+      "label": "رحلة الشمال",
+      "visible": true
+    },
+    {
+      "id": "trip-2",
+      "folder": "academic-trips/trips-2",
+      "label": "خيمة الربيع",
+      "visible": true
+    },
+    {
+      "id": "trip-1",
+      "folder": "academic-trips/trips-1",
+      "label": "وادي المغارة",
+      "visible": true
+    }
+  ]
+}
