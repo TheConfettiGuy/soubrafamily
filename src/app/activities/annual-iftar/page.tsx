@@ -7,6 +7,12 @@ import Link from "next/link";
 // Always read fresh JSON on each request (nice for admin edits in dev)
 export const dynamic = "force-dynamic";
 
+const getEventImageSrc =(img?: string | null)=>{
+  if (!img) return "/placeholder.svg";
+  if (img.startsWith("http")) return img;
+  return "/" + img.replace(/^\/+/,"");
+}
+
 export default async function AnnualIftarPage() {
   const data = await getAnnualIftar();
 
@@ -40,11 +46,7 @@ export default async function AnnualIftarPage() {
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={
-                      event.image
-                        ? `/${event.image}` // e.g. annual-iftar/2024/cover.jpg
-                        : "/placeholder.svg"
-                    }
+                    src={getEventImageSrc(event.image)}
                     alt={`إفطار ${event.year}`}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"

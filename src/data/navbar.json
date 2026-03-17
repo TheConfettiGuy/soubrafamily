@@ -2,11 +2,6 @@
   "topBar": {
     "links": [
       {
-        "id": "contact",
-        "label": "اتصل بنا",
-        "href": "/contact"
-      },
-      {
         "id": "registration",
         "label": "علم وخبر",
         "href": "/registration"
@@ -15,6 +10,11 @@
         "id": "donate",
         "label": "تبرع",
         "href": "/donate"
+      },
+      {
+        "id": "contact",
+        "label": "اتصل بنا",
+        "href": "/contact"
       }
     ],
     "socialMedia": [
@@ -137,6 +137,12 @@
           "icon": "shopping-bag"
         },
         {
+          "id": "honoring",
+          "label": "تكريم",
+          "href": "/activities/honoring",
+          "icon": "/"
+        },
+        {
           "id": "iftar",
           "label": "لقاء الافطار السنوي",
           "href": "/activities/annual-iftar",
@@ -147,6 +153,12 @@
           "label": "نشاطات اجتماعية",
           "href": "/activities/social-activities",
           "icon": "shopping-bag"
+        },
+        {
+          "id": "StreetCeremony",
+          "label": "مراسم افتتاح شارع سوبره",
+          "href": "/activities/street-ceremony",
+          "icon": "/"
         }
       ]
     }

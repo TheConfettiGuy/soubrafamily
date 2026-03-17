@@ -3,11 +3,123 @@
   "description": "",
   "events": [
     {
-      "id": "2023",
-      "year": "2023",
-      "date": "fefwef",
-      "location": "wefwef",
-      "image": "annual-iftar/2024/Gemini_Generated_Image_vja8npvja8npvja8 copy.png",
+      "id": "2025",
+      "year": "2025",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2025/WhatsApp Image 2024-03-30 at 10.08.43 PM (1).jpeg",
+      "visible": true
+    },
+    {
+      "id": "2024",
+      "year": "2024",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2024/WhatsApp Image 2024-03-30 at 10.06.39 PM (1).jpeg",
+      "visible": true
+    },
+    {
+      "id": "2019",
+      "year": "2019",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2019/Image.jpg",
+      "visible": true
+    },
+    {
+      "id": "2018",
+      "year": "2018",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2018/DSC_4007.JPG",
+      "visible": true
+    },
+    {
+      "id": "2016",
+      "year": "2016",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2016/IMG_9405_resize.JPG",
+      "visible": true
+    },
+    {
+      "id": "2013",
+      "year": "2013",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2013/100_1109.JPG",
+      "visible": true
+    },
+    {
+      "id": "2011",
+      "year": "2011",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2011/IMG_7901_resize.JPG",
+      "visible": true
+    },
+    {
+      "id": "2010",
+      "year": "2010",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2010/IMG_0826_resize.JPG",
+      "visible": true
+    },
+    {
+      "id": "2009",
+      "year": "2009",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2009/Image (3).jpg",
+      "visible": true
+    },
+    {
+      "id": "2008",
+      "year": "2008",
+      "date": "",
+      "location": "",
+      "image": "annual-iftar/2008/20260112131656_00004 - Copy (3).jpg",
+      "visible": true
+    },
+    {
+      "id": "2007",
+      "year": "2007",
+      "date": "",
+      "location": "",
+      "image": "/annual-iftar/2007/Image (52).jpg",
+      "visible": true
+    },
+    {
+      "id": "2005",
+      "year": "2005",
+      "date": "",
+      "location": "",
+      "image": "/annual-iftar/2005/Image (17).jpg",
+      "visible": true
+    },
+    {
+      "id": "2003",
+      "year": "2003",
+      "date": "",
+      "location": "",
+      "image": "/annual-iftar/2007/Image (89).jpg",
+      "visible": true
+    },
+    {
+      "id": "2002",
+      "year": "2002",
+      "date": "",
+      "location": "",
+      "image": "/annual-iftar/2002/Image (3).jpg",
+      "visible": true
+    },
+    {
+      "id": "2001",
+      "year": "2001",
+      "date": "",
+      "location": "",
+      "image": "/annual-iftar/2001/Image (5).jpg",
       "visible": true
     }
   ]

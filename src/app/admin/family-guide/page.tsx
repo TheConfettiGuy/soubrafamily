@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <div>
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-xl font-semibold mb-4">إدارة صفحة شجرة العائلة</h1>
+        <h1 className="text-xl font-semibold mb-4">إدارة دليل العائلة</h1>
         <ClientPage />
       </main>
       <Footer />

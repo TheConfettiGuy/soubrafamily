@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import "./globals.css";
 import AdminRibbon from "./components/admin-ribbon";
 import AuthProvider from "./providers/AuthProvider";
+import { NotificationCenter } from "./components/notification-center";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AdminRibbon />
           {children}
         </AuthProvider>
+        <NotificationCenter />
       </body>
     </html>
   );

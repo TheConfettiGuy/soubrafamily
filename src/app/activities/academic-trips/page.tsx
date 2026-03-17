@@ -8,14 +8,13 @@ import academicTripsData from "@/data/academic-trips.json";
 
 export const runtime = "nodejs";
 
-// ----- Types -----
 type Category = {
   id: string;
   folder: string;
   label: string;
+  description?: string;
   visible?: boolean;
 };
-type SearchParams = Record<string, string | string[] | undefined>;
 
 type AcademicTripsJSON = {
   title: string;
@@ -23,12 +22,15 @@ type AcademicTripsJSON = {
   categories: Category[];
 };
 
-// ----- Utils -----
+type SearchParams = Record<string, string | string[] | undefined>;
+
 function listAlbumImagesFromFolder(folder: string): string[] {
   const webBase = `/${folder}`;
   const abs = path.join(process.cwd(), "public", folder);
+
   try {
     const entries = fs.readdirSync(abs, { withFileTypes: true });
+
     return entries
       .filter((e) => e.isFile() && /\.(jpe?g|png|webp|avif|gif)$/i.test(e.name))
       .map((e) => path.posix.join(webBase, e.name))
@@ -44,15 +46,15 @@ function getQueryCat(sp?: SearchParams): string | undefined {
   return raw;
 }
 
-// ----- Page -----
 export default async function AcademicTripsPage({
   searchParams,
 }: {
   searchParams?: Promise<SearchParams>;
 }) {
   const data = academicTripsData as AcademicTripsJSON;
+
   const allCategories = (data.categories || []).filter(
-    (c) => c.visible !== false
+    (c) => c.visible !== false,
   );
 
   if (!allCategories.length) return notFound();
@@ -93,6 +95,7 @@ export default async function AcademicTripsPage({
         <div className="container mx-auto px-4 flex flex-wrap gap-3">
           {allCategories.map((cat) => {
             const active = cat.folder === selectedFolder;
+
             return (
               <Link
                 key={cat.id || cat.folder}
@@ -115,11 +118,18 @@ export default async function AcademicTripsPage({
         </div>
       </div>
 
+      {/* Description */}
+      {current.description && (
+        <div className="container mx-auto px-4 pt-8 text-right">
+          <p className="text-lg text-gray-700 leading-relaxed border-r-4 border-main-100 pr-6">
+            {current.description}
+          </p>
+        </div>
+      )}
+
       {/* Gallery */}
       <div className="container mx-auto px-4 py-8">
-        <section>
-          <LightboxGallery images={images} yearLabel={headerLabel} />
-        </section>
+        <LightboxGallery images={images} yearLabel={headerLabel} />
       </div>
 
       <Footer />

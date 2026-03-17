@@ -2,7 +2,7 @@
   "title": "قصة شجرة العائلة",
   "subtitle": "رحلة توثيق تاريخ عائلة سوبره",
   "author": "بقلم عبد القادر بن محمد بن عبد الستار بن سعيد بن صالح سوبره",
-  "showKeyFigures": true,
+  "showKeyFigures": false,
   "showTimeline": true,
   "keyFigures": [
     {

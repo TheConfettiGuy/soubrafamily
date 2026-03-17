@@ -97,7 +97,6 @@ export default function NavbarClient({
     return Icon ? <Icon className={className} /> : null;
   };
 
-  // ✅ treat as dropdown only if it has children
   const hasDropdown = (it: { dropdown?: any[] }) =>
     Array.isArray(it.dropdown) && it.dropdown.length > 0;
 

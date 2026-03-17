@@ -1,0 +1,72 @@
+{
+  "title": "تكريم أبناء العائلة",
+  "subtitle": "قائمة بالمكرّمين من أبناء العائلة عبر السنوات",
+  "events": [
+    {
+      "id": "2023-01",
+      "year": "2001",
+      "date": "",
+      "name": "الأستاذة ",
+      "occasion": "",
+      "location": "",
+      "image": "/honoring/2001 - iftar .jpg",
+      "visible": true
+    },
+    {
+      "id": "id-1773752908448",
+      "year": "2002",
+      "name": "اسم المكرّم",
+      "visible": true,
+      "image": "/honoring/2002 - iftar .jpg"
+    },
+    {
+      "id": "id-1773752930924",
+      "year": "2003",
+      "name": "اسم المكرّم",
+      "visible": true,
+      "image": "/honoring/2003 - iftar .jpg"
+    },
+    {
+      "id": "id-1773752940373",
+      "year": "2007",
+      "name": "الشيخ عبد الله محمد سوبره",
+      "visible": true,
+      "image": "/honoring/2007 - iftar .jpg"
+    },
+    {
+      "id": "id-1773752956900",
+      "year": "2008",
+      "name": "الشيخ الدكتور سليم محمد عمر سوبره",
+      "visible": true,
+      "image": "/honoring/2008 - iftar .jpg"
+    },
+    {
+      "id": "id-1773752967808",
+      "year": "2009",
+      "name": "الدكتور توفيق حسن سوبره",
+      "visible": true,
+      "image": "/honoring/2009 - iftar .JPG"
+    },
+    {
+      "id": "id-1773752974334",
+      "year": "2010",
+      "name": "الدكتور سامر محمد خير سوبره",
+      "visible": true,
+      "image": "/honoring/2010 - iftar .JPG"
+    },
+    {
+      "id": "id-1773752982994",
+      "year": "2018",
+      "name": "الاستاذ يوسف مصطفى سوبره",
+      "visible": true,
+      "image": "/honoring/2018 - iftar .JPG"
+    },
+    {
+      "id": "id-1773752993247",
+      "year": "2025",
+      "name": "اللاعب عمر محمد هاني سوبره",
+      "visible": true,
+      "image": "/honoring/2025 - iftar .JPG"
+    }
+  ]
+}

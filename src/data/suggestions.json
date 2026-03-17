@@ -1,0 +1,58 @@
+{
+  "title": "إقتراحات أبناء العائلة",
+  "fields": [
+    {
+      "id": "name",
+      "label": "الاسم:",
+      "type": "text",
+      "placeholder": "",
+      "required": true
+    },
+    {
+      "id": "profession",
+      "label": "المهنة:",
+      "type": "text",
+      "placeholder": "",
+      "required": false
+    },
+    {
+      "id": "workAddress",
+      "label": "عنوان العمل:",
+      "type": "textarea",
+      "placeholder": "",
+      "required": false,
+      "rows": 3
+    },
+    {
+      "id": "homeAddress",
+      "label": "عنوان السكن:",
+      "type": "textarea",
+      "placeholder": "",
+      "required": false,
+      "rows": 3
+    },
+    {
+      "id": "phone",
+      "label": "هاتف:",
+      "type": "tel",
+      "placeholder": "",
+      "required": false
+    },
+    {
+      "id": "suggestions",
+      "label": "إقتراحات:",
+      "type": "textarea",
+      "placeholder": "",
+      "required": true,
+      "rows": 6
+    }
+  ],
+  "buttons": {
+    "submit": "إرسال",
+    "reset": "إعادة تعيين"
+  },
+  "contactInfo": {
+    "text": "كما يمكنكم التوجه إلى مركز الجمعية الموقت على العنوان التالي:",
+    "address": "شارع حسنتيان، بناية الأريسكو، الطابق الرابع، تلفاكس: 01-755952"
+  }
+}

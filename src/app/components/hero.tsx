@@ -1,7 +1,7 @@
+import heroData from "@/data/hero.json";
+import { ArrowLeft, LetterText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle, LetterText, Quote } from "lucide-react";
-import heroData from "@/data/hero.json";
 
 export default function NewsHeader() {
   return (
@@ -50,7 +50,7 @@ export default function NewsHeader() {
               href={heroData.button2.link}
               className="inline-flex items-center gap-2 bg-main-100 hover:bg-white hover:text-main-100 text-white px-6 py-3 md:px-8 md:py-4 text-sm md:text-base font-bold transition-colors group"
             >
-              {heroData.button2 .text}
+              {heroData.button2.text}
               <LetterText className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:-translate-x-1" />
             </Link>
 
@@ -61,8 +61,6 @@ export default function NewsHeader() {
               {heroData.button.text}
               <ArrowLeft className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:-translate-x-1" />
             </Link>
-
-            {/* Author Badge */}
           </div>
         </div>
       </div>

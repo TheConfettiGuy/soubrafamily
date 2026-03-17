@@ -47,7 +47,7 @@
   },
   "form": {
     "title": "طلب الانتساب",
-    "annualFee": "25.000L.L.",
+    "annualFee": "500,000 ل.ل.",
     "fields": [
       {
         "id": "name",

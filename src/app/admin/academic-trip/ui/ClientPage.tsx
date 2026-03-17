@@ -10,6 +10,7 @@ type Category = {
   id: string;
   folder: string;
   label: string;
+  description?: string;
   visible?: boolean;
 };
 
@@ -19,14 +20,17 @@ type AcademicTripsData = {
   categories: Category[];
 };
 
-/* ---------- Styles (same as other admin pages) ---------- */
+/* ---------- Styles ---------- */
 
 const btn =
   "border border-gray-300 px-3 py-2 text-sm whitespace-nowrap hover:bg-gray-50 cursor-pointer";
+
 const primaryBtn =
   "bg-main-100 text-white text-sm px-5 py-2 cursor-pointer hover:bg-gray-800";
+
 const redBtn =
   "bg-red-50 text-red-700 cursor-pointer px-3 py-2 text-sm whitespace-nowrap";
+
 const smallLabel = "text-xs text-gray-500";
 
 /* ---------- Normalize ---------- */
@@ -41,6 +45,7 @@ function normalize(data: any): AcademicTripsData {
       id: c.id || `cat_${idx + 1}`,
       folder: c.folder ?? "",
       label: c.label ?? "",
+      description: c.description ?? "",
       visible: c.visible === false ? false : true,
     })),
   };
@@ -50,8 +55,9 @@ function normalize(data: any): AcademicTripsData {
 
 export default function ClientPage() {
   const [data, setData] = useState<AcademicTripsData>(() =>
-    normalize(academicTripsData)
+    normalize(academicTripsData),
   );
+
   const [activeIdx, setActiveIdx] = useState(0);
   const [toast, setToast] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -70,7 +76,7 @@ export default function ClientPage() {
 
   const updateRootField = <K extends keyof AcademicTripsData>(
     key: K,
-    value: AcademicTripsData[K]
+    value: AcademicTripsData[K],
   ) => {
     setData((prev) => ({ ...prev, [key]: value }));
   };
@@ -89,6 +95,7 @@ export default function ClientPage() {
         id: `cat_${cats.length + 1}`,
         folder: "academic-trips/new-folder",
         label: "عنوان رحلة جديدة",
+        description: "",
         visible: true,
       },
     ]);
@@ -104,17 +111,22 @@ export default function ClientPage() {
     setCategories((cats) => {
       const target = dir === "up" ? index - 1 : index + 1;
       if (target < 0 || target >= cats.length) return cats;
+
       const copy = [...cats];
       const [moved] = copy.splice(index, 1);
       copy.splice(target, 0, moved);
+
       return copy;
     });
 
     setActiveIdx((idx) => {
       if (idx !== index) return idx;
+
       const target = dir === "up" ? idx - 1 : idx + 1;
+
       if (target < 0) return 0;
       if (target >= categories.length) return categories.length - 1;
+
       return target;
     });
   };
@@ -122,18 +134,18 @@ export default function ClientPage() {
   const toggleVisible = (index: number) => {
     setCategories((cats) =>
       cats.map((c, i) =>
-        i === index ? { ...c, visible: c.visible === false ? true : false } : c
-      )
+        i === index ? { ...c, visible: c.visible === false ? true : false } : c,
+      ),
     );
   };
 
   const updateCategoryField = (
     index: number,
     field: keyof Category,
-    value: string
+    value: string,
   ) => {
     setCategories((cats) =>
-      cats.map((c, i) => (i === index ? { ...c, [field]: value } : c))
+      cats.map((c, i) => (i === index ? { ...c, [field]: value } : c)),
     );
   };
 
@@ -144,7 +156,9 @@ export default function ClientPage() {
       try {
         const fd = new FormData();
         fd.set("payload", jsonString);
+
         await saveAcademicTrips(fd);
+
         showToast("تم الحفظ وتحديث الملف بنجاح.");
       } catch (err) {
         console.error(err);
@@ -160,6 +174,7 @@ export default function ClientPage() {
       {/* Header config */}
       <section className="border border-gray-300 bg-white px-4 py-4 space-y-4">
         <h2 className="text-lg font-medium">إعدادات صفحة الرحلات الأكاديمية</h2>
+
         <div className="grid sm:grid-cols-2 gap-4">
           <div>
             <label className={smallLabel}>العنوان الرئيسي</label>
@@ -169,6 +184,7 @@ export default function ClientPage() {
               onChange={(e) => updateRootField("title", e.target.value)}
             />
           </div>
+
           <div>
             <label className={smallLabel}>النص تحت العنوان</label>
             <input
@@ -180,7 +196,7 @@ export default function ClientPage() {
         </div>
       </section>
 
-      {/* Categories toolbar + selector */}
+      {/* Categories */}
       <section className="border border-gray-300 bg-white px-4 py-4 space-y-3">
         <div className="flex flex-wrap items-center gap-3">
           <button type="button" className={btn} onClick={addCategory}>
@@ -190,6 +206,7 @@ export default function ClientPage() {
           <div className="flex flex-wrap gap-2">
             {categories.map((cat, idx) => {
               const active = idx === activeIdx;
+
               return (
                 <button
                   key={cat.id || idx}
@@ -209,21 +226,24 @@ export default function ClientPage() {
 
         {activeCat && (
           <div className="space-y-4 border-t border-gray-200 pt-4">
+            {/* Toolbar */}
             <div className="flex flex-wrap items-center gap-3">
               <button
                 type="button"
                 className={btn}
                 onClick={() => moveCategory(activeIdx, "up")}
               >
-                للأعلى ↑
+                ↑ للأعلى
               </button>
+
               <button
                 type="button"
                 className={btn}
                 onClick={() => moveCategory(activeIdx, "down")}
               >
-                للأسفل ↓
+                ↓ للأسفل
               </button>
+
               <button
                 type="button"
                 className={btn}
@@ -233,6 +253,7 @@ export default function ClientPage() {
                   ? "إظهار الرحلة في الموقع"
                   : "إخفاء الرحلة في الموقع"}
               </button>
+
               <button
                 type="button"
                 className={redBtn}
@@ -242,6 +263,7 @@ export default function ClientPage() {
               </button>
             </div>
 
+            {/* Fields */}
             <div className="grid sm:grid-cols-3 gap-4">
               <div>
                 <label className={smallLabel}>المعرّف (ID)</label>
@@ -253,8 +275,9 @@ export default function ClientPage() {
                   }
                 />
               </div>
+
               <div className="sm:col-span-2">
-                <label className={smallLabel}>عنوان الرحلة (Label)</label>
+                <label className={smallLabel}>عنوان الرحلة</label>
                 <input
                   className="mt-1 w-full border border-gray-300 px-3 py-2 text-sm"
                   value={activeCat.label}
@@ -266,9 +289,23 @@ export default function ClientPage() {
             </div>
 
             <div>
+              <label className={smallLabel}>وصف الرحلة</label>
+
+              <textarea
+                rows={4}
+                className="mt-1 w-full border border-gray-300 px-3 py-2 text-sm"
+                value={activeCat.description ?? ""}
+                onChange={(e) =>
+                  updateCategoryField(activeIdx, "description", e.target.value)
+                }
+              />
+            </div>
+
+            <div>
               <label className={smallLabel}>
                 مسار المجلد داخل <code>public/</code>
               </label>
+
               <input
                 className="mt-1 w-full border border-gray-300 px-3 py-2 text-sm"
                 value={activeCat.folder}
@@ -276,26 +313,21 @@ export default function ClientPage() {
                   updateCategoryField(activeIdx, "folder", e.target.value)
                 }
               />
+
               <p className="mt-1 text-[11px] text-gray-500">
-                مثال: <code>academic-trips/trips-3</code> — يجب أن يتطابق مع اسم
-                المجلد الموجود داخل <code>public</code>.
+                مثال: <code>academic-trips/trips-3</code>
               </p>
             </div>
           </div>
         )}
-
-        {!categories.length && (
-          <p className="text-xs text-gray-500 mt-3">
-            لا توجد رحلات حالياً. اضغط على &quot;إضافة رحلة جديدة&quot; للبدء.
-          </p>
-        )}
       </section>
 
-      {/* Save bar */}
-      <section className="border border-gray-300 bg-white px-4 py-4 flex items-center justify-between gap-3">
+      {/* Save */}
+      <section className="border border-gray-300 bg-white px-4 py-4 flex items-center justify-between">
         <div className="text-xs text-gray-500">
           سيتم الحفظ إلى الملف: <code>src/data/academic-trips.json</code>
         </div>
+
         <button
           type="button"
           className={primaryBtn}
@@ -306,7 +338,6 @@ export default function ClientPage() {
         </button>
       </section>
 
-      {/* Toast pop-up bottom center */}
       {toast && (
         <div className="fixed bottom-4 right-4 bg-gray-900 text-white px-4 py-3 shadow-lg z-40">
           {toast}

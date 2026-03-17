@@ -5,19 +5,29 @@
     {
       "id": "trip-3",
       "folder": "academic-trips/trips-3",
-      "label": "رحلة الشمال",
+      "label": "رحلة تثقيفية إلى القاهرة",
+      "description": "test",
       "visible": true
     },
     {
       "id": "trip-2",
       "folder": "academic-trips/trips-2",
-      "label": "خيمة الربيع",
+      "label": "رحلة تثقيفية إلى تركيا",
+      "description": "",
       "visible": true
     },
     {
       "id": "trip-1",
       "folder": "academic-trips/trips-1",
-      "label": "وادي المغارة",
+      "label": "رحلة تثقيفية إلى الاردن",
+      "description": "s",
+      "visible": true
+    },
+    {
+      "id": "cat_4",
+      "folder": "academic-trips/trips-4",
+      "label": "رحلة تثقيفية إلى مدينة طرابلس",
+      "description": "",
       "visible": true
     }
   ]
